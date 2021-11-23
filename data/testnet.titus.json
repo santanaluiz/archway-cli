@@ -30,7 +30,7 @@
         "type": "volume",
         "source": "registry_cache",
         "target": "/usr/local/cargo/registry",
-        "image": "cosmwasm/rust-optimizer:0.12.1"
+        "image": "cosmwasm/rust-optimizer:0.12.4"
       }
     }
   },
