@@ -9,6 +9,7 @@ const { Testnets, loadNetworkConfig } = require('../networks');
 const { isArchwayAddress } = require('../util/validators');
 
 async function sendRequest(address, faucet, feeDenom) {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
   const request = { denom: feeDenom, address };
   const response = await HttpClient.post(faucet, request);
 
